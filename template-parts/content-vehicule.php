@@ -30,7 +30,12 @@
 	</header><!-- .entry-header -->
 
 	<?php concession_post_thumbnail(); ?>
+    <div>
+        <p>marque : <?php the_field("marque"); ?></p>
+        <p>prix : <?php the_field("prix"); ?></p>
+        <p>Année de sortie : <?php the_field("annee_model"); ?></p>
 
+    </div>
 	<div class="entry-content">
 		<?php
 		the_content(
